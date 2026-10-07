@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Theerthana U | Front-End Developer Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top">Theerthana</a>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="icon-btn" id="theme" aria-label="Switch colour theme">Theme</button></li>
+      </ul>
+    </nav>
+    <button class="icon-btn menu-btn" id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <h1>Hi, I'm<span>Theerthana.</span></h1>
+    <p class="lead">I'm a front-end developer in training. I build clean, responsive websites with HTML, CSS and JavaScript, and I'm learning React.</p>
+    <div class="btns">
+      <a class="btn" href="#projects">See my projects</a>
+      <a class="btn ghost" href="#contact">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About me</h2>
+    <div class="about">
+      <div class="avatar" aria-hidden="true">T</div>
+      <div>
+        <p>I'm a student who enjoys turning ideas into pages people can actually use. I care about readable layouts, fast load times and interfaces that work on any screen, from a small phone to a wide monitor.</p>
+        <p>Right now I'm working through a front-end track covering HTML, CSS, JavaScript and React. I use AI tools to explore layouts and debug, and I check everything they suggest before it goes into my code.</p>
+        <div class="facts">
+          <div><b>Studying</b><span>B.Tech Information Technology</span></div>
+          <div><b>At Prathyusha Enginnering College</b><span>Thiruvallur,Tamil Nadu</span></div>
+          <div><b>Looking for</b><span>Internships and junior front-end roles</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills" id="skillList"></div>
+    <div class="tags" aria-label="Tools">
+      <span>Git &amp; GitHub</span><span>VS Code</span><span>Chrome DevTools</span><span>Figma</span><span>Flexbox &amp; Grid</span><span>Responsive design</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button aria-pressed="true" data-f="all">All</button>
+      <button aria-pressed="false" data-f="web">Websites</button>
+      <button aria-pressed="false" data-f="js">JavaScript</button>
+      <button aria-pressed="false" data-f="react">React</button>
+    </div>
+    <div class="grid" id="projectGrid"></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <div>
+      <h2>Contact</h2>
+      <p>Have an opportunity or a question? Send a message and I'll reply within a couple of days.</p>
+      <p><b>Email:</b> <a href="Theerthu@gmail.com">you@example.com</a><br>
+         <b>GitHub:</b> <a href="https://github.com/" rel="Theethu-07r">github.com/your-username</a><br>
+         <b>LinkedIn:</b> <a href="https://www.linkedin.com/" rel="Theerthana">linkedin.com/in/your-name</a></p>
+    </div>
+    <form id="form" novalidate>
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" name="name" autocomplete="name">
+        <p class="err" id="e-name"></p>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email">
+        <p class="err" id="e-email"></p>
+      </div>
+      <div class="field">
+        <label for="msg">Message</label>
+        <textarea id="msg" name="msg"></textarea>
+        <p class="err" id="e-msg"></p>
+      </div>
+      <button class="btn" type="submit">Send message</button>
+      <p class="status" id="status" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">&copy; <span id="year"></span> Your Name. Built with HTML, CSS and JavaScript.</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
